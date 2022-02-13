@@ -1,0 +1,270 @@
+* {
+  font-family: "Lobster", cursive;
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+picture {
+  margin: 0;
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  font: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+select {
+  font: inherit;
+}
+
+textarea {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#header-img {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  object-fit: cover;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-brand {
+  cursor: default;
+  font-size: 31px;
+}
+
+.header--text {
+  position: absolute;
+  width: 100%;
+  top: 250px;
+  text-align: center;
+}
+
+.header--text h1 {
+  display: inline;
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+.header--text h1 span {
+  transition: 0.5s linear;
+}
+.header--text h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+.header--text h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+.header--text h1:hover span:nth-child(1):after {
+  content: "\f072";
+  font-family: "Font Awesome 5 Free";
+}
+.header--text h1:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+.header--text h1:hover span:nth-child(2):after {
+  content: "\f5b6";
+  font-family: "Font Awesome 5 Free";
+}
+
+#audio--player {
+  z-index: 9999;
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  top: 50%;
+  height: 100px;
+  width: 123px;
+}
+
+.carousel-item::before {
+  content: "";
+  height: 1070px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.418);
+  position: absolute;
+}
+
+.wrapper {
+  height: 68vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  font-size: 40px;
+  color: white;
+  left: 244px;
+}
+
+.typing-demo {
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+.typing-demo.dalatcity {
+  width: 10ch;
+}
+
+.typing-demo.phuquoc {
+  width: 15ch;
+}
+
+.typing-demo.vungtau {
+  width: 8ch;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 51px;
+  height: 43px;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 390px;
+  left: 241px;
+  font-size: 40px;
+  font-family: monospace;
+  color: white;
+}
+
+.animate__animated.animate__zoomIn {
+  --animate-duration: 3s;
+}
+
+.button-35 {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 12px;
+  box-shadow: #fff 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  bottom: 150px;
+  right: 36px;
+  color: white;
+}
+
+.button-35:hover {
+  box-shadow: transparent 0 0 0 3px, transparent 0 0 0 0;
+  background-color: #fff;
+  color: #000;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  background: white;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white;
+}
+
+/*# sourceMappingURL=style.css.map */
